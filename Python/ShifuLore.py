@@ -1,5 +1,5 @@
 #
-#   "Shifulore" is a Japanese-themed twist on the game Rock-Paper-Scissors.
+#   "Shifulore" is a Japanese-themed twist on the game Rock-Paper-Scissors. It made after Chapter 1, 2, 3 and 4 of "Legends of Python - Beginner" from Codédex + the sleep's module + \n for a better view in the terminal
 #
 
 import random
@@ -159,6 +159,7 @@ scorePlayer = scorePlayer - scoreVanika
 if scorePlayer > 0:
     print(f"\n\n[{name} WON] You've slayed Vanika !")
 elif scorePlayer < 0:
-    print("\n\n[Vanika WON] Vanika've crushed your hopes and your head...")
+    print("\n\n[Vanika WON] Vanika've crushed your hopes...")
 else:
+
     print("\n\n[DRAW] It's a draw !")
