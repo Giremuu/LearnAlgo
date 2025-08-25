@@ -35,18 +35,6 @@ The goal was to create a project from scratch after completing the Python learni
 
 ---
 
-## Run the project:  
-
-```bash
-# Clone the repo
-git clone https://github.com/your-username/Codedex.git
-cd Codedex/re-clicker
-
-# Run the game
-python main.py
-```
----
-
 ## Possible improvements:
 
 - Add sound effects or background music
