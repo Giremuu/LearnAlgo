@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+
+<!-- =============================================================================
+Date : 26/08/2025
+Context : Create a personal portfolio in HTML/CSS after learning both with Codédex.
+
+Tip: I use big ASCII comments (Like "Body"'s one) in my code to help me find my way with the mini-map on VSCode
+=============================================================================  -->
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SmallFolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="Personal small portfolio: About me, Projects, and Contact !" />
+</head>
+
+<!-- 
+______  _____________   __
+| ___ \|  _  |  _  \ \ / /
+| |_/ /| | | | | | |\ V / 
+| ___ \| | | | | | | \ /  
+| |_/ /\ \_/ / |/ /  | |  
+\____/  \___/|___/   \_/  
+-->
+
+<body>
+  <a class="skip-link" href="#main">To navigate with tab bar, this text is hidden on the page</a>
+
+<!-- 
+ _   _                _           
+| | | |              | |          
+| |_| | ___  __ _  __| | ___ _ __ 
+|  _  |/ _ \/ _` |/ _` |/ _ \ '__|
+| | | |  __/ (_| | (_| |  __/ |   
+\_| |_/\___|\__,_|\__,_|\___|_|   
+-->                            
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">
+        <span class="brand__text">Giremuu - SmallFolio</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <button class="nav__toggle" aria-expanded="false" aria-controls="nav-menu">Menu</button>
+        <ul id="nav-menu" class="nav__list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+<!-- 
+___  ___      _       
+|  \/  |     (_)      
+| .  . | __ _ _ _ __  
+| |\/| |/ _` | | '_ \ 
+| |  | | (_| | | | | |
+\_|  |_/\__,_|_|_| |_|
+--> 
+
+  <main id="main">
+
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <h1>Hello, I’m <span class="accent">Giremuu</span>.</h1>
+          <p class="lead">
+            French student in infrastructure and cybersecurity, developing my skills through studies, work-study experience, and self-learning.
+            <br> My long-term goal: to live and work in Japan permanently (My dream...)
+          </p>
+          <div class="hero__cta">
+            <a class="btn" href="#projects">See my work</a>
+            <a class="btn btn--ghost" href="#contact">Contact me</a>
+          </div>
+        </div>
+        <figure class="hero__figure">
+          <img src="https://i.pinimg.com/736x/de/00/cb/de00cbcbd4dda532106fec7227696484.jpg" alt="It's me, trust" />
+          <figcaption>That’s me, trust (No)</figcaption>
+        </figure>
+      </div>
+    </section>
+
+<!--
+  ___  _                 _   
+ / _ \| |               | |  
+/ /_\ \ |__   ___  _   _| |_ 
+|  _  | '_ \ / _ \| | | | __|
+| | | | |_) | (_) | |_| | |_ 
+\_| |_/_.__/ \___/ \__,_|\__|
+--> 
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>
+          I’m a web enthusiast who enjoys infrastructure, cybersecurity and play with a computer.
+          I care a bit about my image, I want to be the nice and chill guy that you like in your side. When I’m not working, I love playing videogames, read sometimes, or even stream on Twitch!
+        </p>
+        <ul class="about__list">
+          <li><strong>Location:</strong> France</li>
+          <li><strong>Focus:</strong> Infrastructure / Cybersecurity Blue Team</li>
+          <li><strong>Favorite video games:</strong> Dark Souls 3 / Hollow Knight</li>
+        </ul>
+      </div>
+    </section>
+
+<!--
+ _____ _             _    
+/  ___| |           | |   
+\ `--.| |_ __ _  ___| | __
+ `--. \ __/ _` |/ __| |/ /
+/\__/ / || (_| | (__|   < 
+\____/ \__\__,_|\___|_|\_\
+--> 
+
+    <section id="stack" class="section">
+      <div class="container">
+        <h2>Stack</h2>
+        <p>Here are the main technologies I use as of 08/2025:</p>
+        <ul class="stack__list">
+          <li><img src="icons/html-5.png" alt="HTML5 logo" /> HTML5</li>
+          <li><img src="icons/css-3.png" alt="CSS3 logo" /> CSS3</li>
+          <li><img src="icons/python.png" alt="Python logo" /> Python</li>
+          <li><img src="icons/gnu-bash.png" alt="Bash logo" /> Bash</li>
+          <li><img src="icons/powershell.png" alt="PowerShell logo" /> PowerShell</li>
+          <li><img src="icons/ansible.png" alt="Ansible logo" /> Ansible</li>
+        </ul>
+      </div>
+    </section>
+
+<!--
+______          _           _   
+| ___ \        (_)         | |  
+| |_/ / __ ___  _  ___  ___| |_ 
+|  __/ '__/ _ \| |/ _ \/ __| __|
+| |  | | | (_) | |  __/ (__| |_ 
+\_|  |_|  \___/| |\___|\___|\__|
+              _/ |              
+             |__/               
+--> 
+
+    <section id="projects" class="section section--alt">
+      <div class="container">
+        <h2>Projects</h2>
+
+        <div class="grid projects">
+          <!-- Card 1 -->
+          <article class="card">
+            <img class="card__media" src="icons/windows-WSL_1.webp" alt="Screenshot of Project One - WSL" />
+            <div class="card__body">
+              <h3 class="card__title">WSL Setup</h3>
+              <p class="card__text">A github repo to install WSL on your windows.</p>
+              <div class="card__actions">
+                <a class="btn btn--ghost btn--small" href="https://github.com/Giremuu/WSL-Setup_Configuration" target="_blank" aria-label="Open Github repo">Github</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="card">
+            <img class="card__media" src="???" alt="Screenshot of Project Two - ???" />
+            <div class="card__body">
+              <h3 class="card__title">Project Two</h3>
+              <p class="card__text">Yes???</p>
+              <div class="card__actions">
+                <a class="btn btn--small" href="#">Live</a>
+                <a class="btn btn--ghost btn--small" href="#" target="_blank" aria-label="Open Github repo">Github</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="card">
+            <img class="card__media" src="https://picsum.photos/602/400" alt="Screenshot of Project Three" />
+            <div class="card__body">
+              <h3 class="card__title">RE:CLicker</h3>
+              <p class="card__text">A small clicker game made with Python.</p>
+              <div class="card__actions">
+                <a class="btn btn--small" href="#">Live</a>
+                <a class="btn btn--ghost btn--small" href="https://github.com/Giremuu/LearnAlgo/tree/main/Python/Project-2-RE_Clicker" target="_blank" aria-label="Open Github repo">Github</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+<!--
+ _____             _             _   
+/  __ \           | |           | |  
+| /  \/ ___  _ __ | |_ __ _  ___| |_ 
+| |    / _ \| '_ \| __/ _` |/ __| __|
+| \__/\ (_) | | | | || (_| | (__| |_ 
+ \____/\___/|_| |_|\__\__,_|\___|\__|
+-->                                      
+                                     
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>Want to collaborate or say hi? Send me a message:</p>
+        <ul class="social">
+          <li><a href="#" aria-label="GitHub profile">GitHub</a></li>
+          <li><a href="#" aria-label="LinkedIn profile">LinkedIn</a></li>
+          <li><a href="#" aria-label="Twitter/X profile">Twitter</a></li>
+          <li><a href="mailto:hadashigang@gmail.com?subject=Portfolio%20Contact&body=Hi%20Giremu,%0A%0A">Email</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+<!--
+______          _            
+|  ___|        | |           
+| |_ ___   ___ | |_ ___ _ __ 
+|  _/ _ \ / _ \| __/ _ \ '__|
+| || (_) | (_) | ||  __/ |   
+\_| \___/ \___/ \__\___|_|   
+-->   
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>
+        © 2025 Giremuu — Codédex
+        <br>Feel free to use anything you want (Except my personal info or my projects without credits please)
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
